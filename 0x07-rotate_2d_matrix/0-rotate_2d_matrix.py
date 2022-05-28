@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Given an n x n 2D matrix, rotate it 90 degrees clockwise.
 """
@@ -16,3 +15,4 @@ def rotate_2d_matrix(matrix):
     for i in range(0, n_len, chunk_size):
         rotated_matrix.append(n[i:i+chunk_size])
     matrix.clear()
+    matrix += rotated_matrix[::-1]
