@@ -14,5 +14,3 @@ def rotate_2d_matrix(matrix):
     rotated_matrix = list()
     for i in range(0, n_len, chunk_size):
         rotated_matrix.append(n[i:i+chunk_size])
-    res = rotated_matrix[::-1]
-    return res
