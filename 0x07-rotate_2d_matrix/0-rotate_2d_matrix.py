@@ -17,10 +17,3 @@ def rotate_2d_matrix(matrix):
         rotated_matrix.append(n[i:i+chunk_size])
         matrix.clear()
     matrix += rotated_matrix[::-1]
-
-matrix = [[1, 2, 3],
-              [4, 5, 6],
-              [7, 8, 9]]
-
-matrix = rotate_2d_matrix(matrix)
-print(matrix)
